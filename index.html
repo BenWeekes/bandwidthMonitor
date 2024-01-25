@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Chart</title>
+</head>
+<body>
+  <img id="chartImage" src="/chart_in.png" alt="Dynamic Chart">
+  <img id="chartImage2" src="/chart_out.png" alt="Dynamic Chart">
+
+  <script>
+    // Function to update the chart image source every second
+    function updateChartImage() {
+      const timestamp = new Date().getTime(); // Append timestamp to force browser to reload the image
+      const chartImage = document.getElementById('chartImage');
+      chartImage.src = `/chart_in.png?timestamp=${timestamp}`;
+      const chartImage2 = document.getElementById('chartImage2');
+      chartImage2.src = `/chart_out.png?timestamp=${timestamp}`;
+    }
+
+    // Update the chart image every second
+    setInterval(updateChartImage, 1000);
+  </script>
+</body>
+</html>
+
