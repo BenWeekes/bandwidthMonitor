@@ -4,9 +4,10 @@
 
 ## Setup ChartJS Node Project<a name="setup1"></a>
 
-### Clone repo
+### Clone ME
 Clone this git repo on your mac and cd into the folder 
-
+      $ git clone https://github.com/BenWeekes/bandwidthMonitor
+      
 ### Install brew, nvm, node
 https://dev.to/ajeetraina/how-to-install-and-configure-nvm-on-mac-os-5fgi
 
