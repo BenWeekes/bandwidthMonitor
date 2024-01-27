@@ -6,6 +6,7 @@
 
 ### Clone Me
 Clone this git repo on your mac and cd into the folder      
+
       $ git clone https://github.com/BenWeekes/bandwidthMonitor
 
 ### Install brew, nvm, node
@@ -42,7 +43,8 @@ Open settings > Network > Wi-Fi > Details > TCP/IP
 Note your local IP v4 and IP v6 (x2) addresses
 
 ### Run the capture 
-substitute your IPs in the command below and run in a new terminal window
+substitute your IPs in the command below and run in a new terminal window    
+  
       $ sudo ./capture.sh "192.168.1.172" "2a00:23c7:5d1f:4a01:c53:8f4c:48fd:9a6c" "2a00:23c7:5d1f:4a01:60dd:bbdb:54d0:d36b"
 
 
