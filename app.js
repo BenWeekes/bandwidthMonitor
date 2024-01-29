@@ -102,7 +102,7 @@ chartData.splice(maxTimeIndex, 1);
           },
           y: {
             min: 0,
-            max: 1800,
+            max: 18000,
             title: {
               display: true,
               text: 'kbps',
