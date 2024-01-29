@@ -43,6 +43,15 @@ function readAndChartFile(title, fileName, borderColor, backgroundColor, pointBa
     // Convert secondsData into an array for charting
     const chartData = Object.values(secondsData);
 
+// Find the element with the largest timeInSeconds
+const maxTimeIndex = chartData.reduce((maxIndex, currentElement, currentIndex, array) => {
+  return currentElement.timeInSeconds > array[maxIndex].timeInSeconds ? currentIndex : maxIndex;
+}, 0);
+
+// Remove the element with the largest timeInSeconds
+chartData.splice(maxTimeIndex, 1);
+
+
 
     // Charting
     const width = 1000;
@@ -63,7 +72,7 @@ function readAndChartFile(title, fileName, borderColor, backgroundColor, pointBa
           backgroundColor: backgroundColor,
           pointBackgroundColor: pointBackgroundColor,
           borderWidth: 1,
-          pointRadius: 1,
+          pointRadius: 0,
           fill: true,
         }],
       },
